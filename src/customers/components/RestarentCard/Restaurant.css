@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+.productCard .textPart {
+    transition: transform 0.3s ease-out;
+    font-family: 'Playfair Display', serif;
+  }
+.productCard:hover .textPart{
+    transform: translateY(-1rem);
+    /* padding: 0 10px; */
+    background: #191919;
+
+}
+
+.productCard:hover{
+  /* box-shadow: #000000 0px 5px 15px; */
+  
+}
