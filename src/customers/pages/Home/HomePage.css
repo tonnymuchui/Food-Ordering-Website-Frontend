@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.banner{
+    background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    animation: shrink 5s infinite alternate;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.cover{
+    width: 100%;
+    height: 90vh;
+    background: #000;
+    opacity: .4;
+}
+
+.fadout {
+    /* border: 1px solid red; */
+    z-index: 20;
+     background-color: transparent;
+     background-image: linear-gradient(
+       180deg,
+       hsla(0, 0%, 8%, 0) 0,
+       hsla(0, 0%, 8%, 0.15) 15%,
+       hsla(0, 0%, 8%, 0.35) 29%,
+       hsla(0, 0%, 8%, 0.58) 44%,
+       #131313 68%,
+       #0D0D0D0D
+     );
+     background-position: 0 top;
+     background-repeat: repeat-x;
+     background-size: 100% 100%;
+     bottom: -3rem;
+     height: 10vw;
+     opacity: 1;
+     /* top: auto; */
+     width: 100%;
+     left: 0;
+     position: absolute;
+     right: 0;
+     /* z-index: 8; */
+     /* background-color: aqua; */
+   }
+
+   @media only screen and (max-width: 900px) {
+    .banner {
+      height: 40vh;
+    }
+    .cover{
+      height: 40vh;
+    
+  }
+  
+.fadout {
+  
+   bottom: -3rem;
+   height: 20vw;
+   
+ }
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Playfair Display', serif;
+  }
