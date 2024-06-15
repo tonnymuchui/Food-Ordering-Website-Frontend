@@ -6,9 +6,9 @@ import { Grid } from "@mui/material";
 import OrdersTable from "../Orders/OrderTable";
 import MenuItemTable from "../Food/MenuItemTable";
 import AvgCard from "../ReportCard/ReportCard";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
-import SellIcon from "@mui/icons-material/Sell";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import InventoryIcon from '@mui/icons-material/Inventory';
+
 
 const RestaurantDashboard = () => {
   const { id } = useParams();
@@ -33,35 +33,35 @@ const RestaurantDashboard = () => {
         <Grid item lg={3} xs={12}>
           <AvgCard
             title={"Total Earnings"}
-            value={`Rs. ${450}`}
+            value={`Ksh. ${450}`}
             growValue={70}
             icon={
-              <CurrencyRupeeIcon sx={{ fontSize: "3rem", color: "gold" }} />
+              <AttachMoneyIcon sx={{ fontSize: "3rem", color: "gold" }} />
             }
           />
         </Grid>
         <Grid item lg={3} xs={12}>
           <AvgCard
-            title={"Total Selles"}
-            value={`${390}`}
+            title={"Total Sales"}
+            value={`Ksh ${390}`}
             growValue={35}
-            icon={<SellIcon sx={{ fontSize: "3rem", color: "green" }} />}
+            icon={<AttachMoneyIcon sx={{ fontSize: "3rem", color: "gold" }} />}
           />
         </Grid>
         <Grid item lg={3} xs={12}>
           <AvgCard
             title={"Sold Items"}
-            value={`${299}`}
+            value={`Ksh ${299}`}
             growValue={30}
-            icon={<FastfoodIcon sx={{ fontSize: "3rem", color: "blue" }} />}
+            icon={<AttachMoneyIcon sx={{ fontSize: "3rem", color: "gold" }} />}
           />
         </Grid>
         <Grid item lg={3} xs={12}>
           <AvgCard
             title={"Left Items"}
-            value={`${1}`}
+            value={`Ksh ${113}`}
             growValue={10}
-            icon={<FastfoodIcon sx={{ fontSize: "3rem", color: "red" }} />
+            icon={<InventoryIcon sx={{ fontSize: "3rem", color: "gold" }} />
             
           }
           />

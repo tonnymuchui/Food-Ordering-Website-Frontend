@@ -176,7 +176,7 @@ const Details = () => {
                   <p className="text-gray-400">
                     {" "}
                     <span className="pr-5">-</span>
-                    {" +91"}
+                    {""}
                     {restaurant.usersRestaurant?.contactInformation.mobile}
                   </p>
                 </div>

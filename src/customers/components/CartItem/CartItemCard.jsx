@@ -64,7 +64,7 @@ const CartItemCard = ({ item }) => {
             }
           </div>
 
-          <p>₹{item.totalPrice}</p>
+          <p>Ksh{item.totalPrice}</p>
         </div>
       </div>
       <div className="pt-3 space-x-2">
